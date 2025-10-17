@@ -1,0 +1,87 @@
+<section class="contact-hero section">
+  <div class="container">
+    <span class="section-eyebrow">Kontakt</span>
+    <h1 class="section-title">Direkt zu Stefanos und Annamaria.</h1>
+    <p class="section-subtitle">
+      Kein Ladenlokal, kein Showroom – wir kommen zu Ihnen. Schreiben oder rufen Sie uns an und wir
+      stimmen alles persoenlich ab.
+    </p>
+  </div>
+</section>
+
+<section class="contact-content section">
+  <div class="contact-content__grid container">
+    <div class="contact-content__info card">
+      <h2>Ihre Ansprechpartner</h2>
+      <p>Stefanos kuemmert sich um das Handwerk, Annamaria um Ihre Nachrichten und Termine.</p>
+      <ul class="contact-content__details">
+        @for (detail of contactDetails; track detail.label) {
+          <li>
+            <span>{{ detail.label }}</span>
+            @if (detail.url) {
+              <a [href]="detail.url">{{ detail.detail }}</a>
+            } @else {
+              <span>{{ detail.detail }}</span>
+            }
+          </li>
+        }
+      </ul>
+      <p class="contact-content__note">
+        Wir sind flexibel unterwegs – Projektbesichtigungen finden direkt bei Ihnen statt. Teilen Sie
+        uns einfach Wunschtermine mit.
+      </p>
+    </div>
+
+    <div class="contact-content__form card">
+      <h2>Kontaktformular</h2>
+      <p>
+        Beschreiben Sie Ihr Vorhaben. Annamaria meldet sich spaetestens am naechsten Werktag bei Ihnen
+        zurueck.
+      </p>
+      <form (submit)="submitContactForm($event)" novalidate>
+        <div class="contact-content__form-row">
+          <label>
+            Ihr Name*
+            <input type="text" name="name" placeholder="Vor- und Nachname" required />
+          </label>
+          <label>
+            E-Mail*
+            <input type="email" name="email" placeholder="name@email.de" required />
+          </label>
+        </div>
+        <div class="contact-content__form-row">
+          <label>
+            Telefonnummer
+            <input type="tel" name="phone" placeholder="+49 ..." />
+          </label>
+          <label>
+            Einsatzort
+            <input type="text" name="location" placeholder="Ort / Stadtteil" />
+          </label>
+        </div>
+        <label>
+          Nachricht*
+          <textarea name="message" rows="5" placeholder="Beschreiben Sie Ihr Projekt" required></textarea>
+        </label>
+        <div class="contact-content__privacy">
+          <input type="checkbox" id="privacy" required />
+          <label for="privacy">
+            Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden. Hinweise zum
+            Widerruf finden Sie im <a routerLink="/impressum">Impressum</a>.
+          </label>
+        </div>
+        <button type="submit" class="btn">Anfrage senden</button>
+      </form>
+
+      @if (submitted()) {
+        <div class="contact-content__success">
+          <strong>Vielen Dank fuer Ihre Nachricht!</strong>
+          <p>
+            Wir melden uns zeitnah bei Ihnen. Fuer dringende Anliegen erreichen Sie uns telefonisch unter
+            <a href="tel:+4971189987700">+49 711 899 877 00</a>.
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

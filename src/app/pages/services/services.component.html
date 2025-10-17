@@ -1,0 +1,79 @@
+<section class="services-hero section">
+  <div class="container">
+    <span class="section-eyebrow">Leistungen</span>
+    <h1 class="section-title">Fliesenarbeiten mit persoenlicher Handschrift.</h1>
+    <p class="section-subtitle">
+      Stefanos Papadopoulos kuemmert sich selbst um Ihre Flaechen. Ohne Showroom, ohne Umwege –
+      dafuer mit viel Erfahrung im Grossraum Buehlertal, Rastatt und oberer Ortenau.
+    </p>
+  </div>
+</section>
+
+<section class="services-packages section">
+  <div class="container">
+    <div class="services-packages__grid">
+      @for (package of servicePackages; track package.title) {
+        <article class="services-packages__card">
+          <figure>
+            <img [src]="package.image" [alt]="package.title" loading="lazy" />
+          </figure>
+          <div class="services-packages__content card">
+            <h2>{{ package.title }}</h2>
+            <p>{{ package.description }}</p>
+            <ul>
+              @for (feature of package.features; track feature) {
+                <li>{{ feature }}</li>
+              }
+            </ul>
+            <a routerLink="/kontakt" class="services-packages__cta">Projekt anfragen</a>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="services-material section">
+  <div class="services-material__inner container card">
+    <div class="services-material__intro">
+      <span class="section-eyebrow">Materialwahl</span>
+      <h2 class="section-title">Gemeinsam finden wir die passende Platte.</h2>
+      <p>
+        Muster bringt Stefanos direkt mit zum Termin. Dank jahrelanger Erfahrung weiss er, welche
+        Kombinationen langlebig sind und optisch ueberzeugen.
+      </p>
+    </div>
+    <div class="services-material__list">
+      @for (type of tileTypes; track type.name) {
+        <article>
+          <h3>{{ type.name }}</h3>
+          <p>{{ type.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="services-faq section">
+  <div class="container">
+    <div class="services-faq__grid">
+      <div class="services-faq__intro">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Haeufige Fragen.</h2>
+        <p>
+          Keine Frage bleibt offen: Annamaria Papadopoulos beantwortet Ihre Anliegen zeitnah und
+          organisiert die Termine.
+        </p>
+        <a routerLink="/kontakt" class="btn">Kontakt aufnehmen</a>
+      </div>
+      <div class="services-faq__items">
+        @for (faq of faqs; track faq.question) {
+          <article class="card">
+            <h3>{{ faq.question }}</h3>
+            <p>{{ faq.answer }}</p>
+          </article>
+        }
+      </div>
+    </div>
+  </div>
+</section>

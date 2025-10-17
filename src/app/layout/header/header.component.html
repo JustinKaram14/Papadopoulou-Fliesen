@@ -1,0 +1,94 @@
+<header class="header" [class.header--open]="menuOpen()">
+  <div class="header__container container">
+    <a
+      class="header__brand"
+      routerLink="/"
+      aria-label="Zur Startseite"
+      (click)="closeMenu()"
+    >
+      <span class="header__mark">PF</span>
+      <span class="header__brand-text">
+        <span class="header__brand-name">Papadopoulos Fliesen</span>
+        <span class="header__brand-tagline">Stefanos &amp; Annamaria aus Buehlertal</span>
+      </span>
+    </a>
+
+    <button
+      class="header__toggle"
+      type="button"
+      aria-label="Navigation umschalten"
+      aria-controls="hauptnavigation"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span class="header__toggle-line"></span>
+      <span class="header__toggle-line"></span>
+      <span class="header__toggle-line"></span>
+    </button>
+
+    <nav
+      id="hauptnavigation"
+      class="header__nav"
+      aria-label="Hauptnavigation"
+      [class.header__nav--open]="menuOpen()"
+    >
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a
+            routerLink="/"
+            routerLinkActive="is-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()"
+          >
+            Start
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            routerLink="/leistungen"
+            routerLinkActive="is-active"
+            (click)="closeMenu()"
+          >
+            Leistungen
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            routerLink="/unternehmen"
+            routerLinkActive="is-active"
+            (click)="closeMenu()"
+          >
+            Unternehmen
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            routerLink="/kontakt"
+            routerLinkActive="is-active"
+            (click)="closeMenu()"
+          >
+            Kontakt
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--mobile">
+          <a routerLink="/kontakt" class="btn" (click)="closeMenu()">Kontakt aufnehmen</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+4971189987700">
+        <span>Direkt: +49 711 899 877 00</span>
+      </a>
+      <a routerLink="/kontakt" class="btn btn--ghost">Kontakt aufnehmen</a>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="header__backdrop"
+    aria-hidden="true"
+    tabindex="-1"
+    (click)="closeMenu()"
+  ></button>
+</header>

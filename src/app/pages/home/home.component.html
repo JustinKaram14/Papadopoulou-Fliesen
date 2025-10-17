@@ -1,0 +1,153 @@
+<section class="home-hero section">
+  <div class="home-hero__inner container">
+    <div class="home-hero__copy">
+      <span class="section-eyebrow">Papadopoulos Fliesen</span>
+      <h1>
+        Handwerk von Stefanos Papadopoulos<br />
+        fuer Flaechen mit Charakter.
+      </h1>
+      <p>
+        Seit vielen Jahren verlegt Stefanos persoenlich Fliesen und Naturstein im Grossraum
+        Buehlertal, Rastatt und oberer Ortenau. Unterstuetzt von Tochter Annamaria erhalten Sie
+        direkte Kommunikation, transparente Angebote und sorgfaeltige Ausfuehrung.
+      </p>
+      <div class="home-hero__actions">
+        <a routerLink="/kontakt" class="btn">Projekt anfragen</a>
+        <a routerLink="/leistungen" class="btn btn--ghost">Leistungen ansehen</a>
+      </div>
+      <div class="home-hero__facts">
+        <div>
+          <strong>1 Meister</strong>
+          <span>Stefanos kuemmert sich um jede Fuge</span>
+        </div>
+        <div>
+          <strong>Familienbetrieb</strong>
+          <span>Annamaria organisiert Angebote &amp; Termine</span>
+        </div>
+        <div>
+          <strong>Vor Ort</strong>
+          <span>Mobil im Grossraum Buehlertal unterwegs</span>
+        </div>
+      </div>
+    </div>
+    <div class="home-hero__media">
+      <figure>
+        <img src="/images/hero.jpg" alt="Fliesenarbeiten von Stefanos Papadopoulos" loading="lazy" />
+        <figcaption>Handwerk direkt bei Ihnen vor Ort.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="home-services section">
+  <div class="container">
+    <span class="section-eyebrow">Leistungen</span>
+    <h2 class="section-title">Praezision, Qualitaet und freundliche Abstimmung.</h2>
+    <div class="home-services__grid">
+      @for (service of serviceHighlights; track service.title) {
+        <article class="home-services__card card">
+          <span class="home-services__icon material-symbols-rounded">{{ service.icon }}</span>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <a routerLink="/leistungen" class="home-services__link">Details ansehen</a>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="home-about section">
+  <div class="home-about__inner container">
+    <div class="home-about__image">
+      <img src="/images/about.jpg" alt="Stefanos Papadopoulos bei der Arbeit" loading="lazy" />
+    </div>
+    <div class="home-about__content">
+      <span class="section-eyebrow">Wer wir sind</span>
+      <h2 class="section-title">Eine kleine Familie mit viel Herz fuer gutes Handwerk.</h2>
+      <p>
+        Stefanos Papadopoulos ist Ihr Ansprechpartner auf der Baustelle. Annamaria Papadopoulos
+        uebernimmt Angebote, Kommunikation und Buchhaltung. Es gibt keinen Showroom, keine
+        Hotline&nbsp;&ndash; dafuer direkte Wege und ehrliche Beratung bei Ihnen zu Hause.
+      </p>
+      <ul>
+        <li>Individuelle Loesungen fuer Baeder, Wohnraeume und Aussenbereiche.</li>
+        <li>Saubere Arbeit vor Ort inklusive Untergrundpruefung und Pflegehinweisen.</li>
+        <li>Familiaere Zusammenarbeit mit kurzen Reaktionszeiten.</li>
+      </ul>
+      <a routerLink="/unternehmen" class="btn btn--ghost">Mehr erfahren</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-process section">
+  <div class="container">
+    <span class="section-eyebrow">Ablauf</span>
+    <h2 class="section-title">So laeuft ein Projekt mit uns ab.</h2>
+    <div class="home-process__grid">
+      @for (step of processSteps; track step.title; let i = $index) {
+        <article class="home-process__item card">
+          <span class="home-process__counter">0{{ i + 1 }}</span>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="home-gallery section">
+  <div class="container">
+    <span class="section-eyebrow">Inspiration</span>
+    <h2 class="section-title">Ausgewaehlte Arbeiten von Stefanos.</h2>
+    <div class="home-gallery__grid">
+      @for (project of projectGallery; track project.title) {
+        <article class="home-gallery__card">
+          <figure>
+            <img [src]="project.image" [alt]="project.title" loading="lazy" />
+            <figcaption>
+              <span>{{ project.category }}</span>
+              <strong>{{ project.title }}</strong>
+            </figcaption>
+          </figure>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="home-testimonials section">
+  <div class="container">
+    <span class="section-eyebrow">Rueckmeldungen</span>
+    <h2 class="section-title">Was Kundinnen und Kunden sagen.</h2>
+    <div class="home-testimonials__grid">
+      @for (testimonial of testimonials; track testimonial.name) {
+        <blockquote class="home-testimonials__card card">
+          <p>"{{ testimonial.quote }}"</p>
+          <footer>
+            <strong>{{ testimonial.name }}</strong>
+            <span>{{ testimonial.role }}</span>
+          </footer>
+        </blockquote>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="home-cta section">
+  <div class="home-cta__inner container card">
+    <div>
+      <span class="section-eyebrow">Direkte Abstimmung</span>
+      <h2 class="section-title">
+        Erzählen Sie uns von Ihrem Vorhaben&nbsp;&ndash; wir melden uns zeitnah.
+      </h2>
+      <p>
+        Schreiben Sie Annamaria Papadopoulos oder rufen Sie direkt an. Gemeinsam finden wir einen
+        Termin, an dem Stefanos sich Ihr Projekt vor Ort anschauen kann.
+      </p>
+    </div>
+    <div class="home-cta__actions">
+      <a routerLink="/kontakt" class="btn">Kontaktformular</a>
+      <a href="tel:+4971189987700" class="btn btn--ghost">Jetzt anrufen</a>
+    </div>
+  </div>
+</section>

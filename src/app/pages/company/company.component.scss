@@ -1,0 +1,127 @@
+:host {
+  display: block;
+}
+
+.company-hero {
+  padding-top: clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.company-hero__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+.company-hero__copy p {
+  color: var(--color-muted);
+  margin: 1.5rem 0 0;
+}
+
+.company-hero__image img {
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-card);
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.company-values__grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.company-values__grid p {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.company-timeline__list {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.company-timeline__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  box-shadow: none;
+}
+
+.company-timeline__year {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.company-timeline__item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.company-timeline__item p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.company-team__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: center;
+  box-shadow: var(--shadow-card);
+}
+
+.company-team__image img {
+  border-radius: var(--radius-medium);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.company-team__content p {
+  margin: 0 0 1.5rem;
+  color: var(--color-muted);
+}
+
+.company-team__content ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.75rem;
+  color: var(--color-muted);
+}
+
+.company-certifications__grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.company-certifications__grid p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1100px) {
+  .company-hero__inner,
+  .company-team__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .company-values__grid,
+  .company-certifications__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .company-values__grid,
+  .company-certifications__grid {
+    grid-template-columns: 1fr;
+  }
+}

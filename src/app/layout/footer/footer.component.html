@@ -1,0 +1,66 @@
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__grid container">
+      <div class="footer__brand">
+        <div class="footer__logo">PF</div>
+        <h2>Papadopoulos Fliesen</h2>
+        <p>
+          Meisterhandwerk von Stefanos Papadopoulos. Unterwegs im Grossraum Buehlertal, Rastatt und
+          oberer Ortenaukreis – ohne Showroom, dafür direkt bei Ihnen vor Ort.
+        </p>
+        <div class="footer__contact">
+          <a href="tel:+4971189987700">+49 711 899 877 00</a>
+          <a href="mailto:kontakt@papadopoulos-fliesen.de">kontakt@papadopoulos-fliesen.de</a>
+          <span>Termin nach Vereinbarung mit Stefanos oder Annamaria.</span>
+        </div>
+        <a class="btn" routerLink="/kontakt">Kontakt aufnehmen</a>
+      </div>
+
+      <div class="footer__column">
+        <h3>Schwerpunkte</h3>
+        <ul>
+          @for (item of highlights; track item.title) {
+            <li>{{ item.title }}</li>
+          }
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h3>Einsatzgebiet</h3>
+        <ul>
+          @for (region of regions; track region) {
+            <li>{{ region }}</li>
+          }
+        </ul>
+        <div class="footer__social">
+          <span class="section-eyebrow">Instagram</span>
+          <div class="footer__social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+              @papadopoulos.fliesen
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <h3>Navigation</h3>
+        <ul>
+          @for (link of quickLinks; track link.label) {
+            <li>
+              <a [routerLink]="link.path">{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <p>&copy; {{ currentYear }} Papadopoulos Fliesen. Alle Rechte vorbehalten.</p>
+    <div class="footer__legal">
+      <a routerLink="/impressum">Impressum</a>
+      <a routerLink="/kontakt">Kontakt</a>
+      <a href="mailto:kontakt@papadopoulos-fliesen.de">E-Mail schreiben</a>
+    </div>
+  </div>
+</footer>

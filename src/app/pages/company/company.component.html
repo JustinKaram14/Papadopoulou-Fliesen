@@ -1,0 +1,81 @@
+<section class="company-hero section">
+  <div class="company-hero__inner container">
+    <div class="company-hero__copy">
+      <span class="section-eyebrow">Unternehmen</span>
+      <h1 class="section-title">Papadopoulos Fliesen – ein Familienbetrieb auf Augenhoehe.</h1>
+      <p>
+        Seit 2003 ist Stefanos Papadopoulos als Fliesenlegermeister im Grossraum Buehlertal unterwegs.
+        Mit Tochter Annamaria an seiner Seite entstehen persoenliche Projekte ohne Umwege und mit viel
+        Liebe zum Detail.
+      </p>
+    </div>
+    <div class="company-hero__image">
+      <img src="/images/company-hero.jpg" alt="Stefanos Papadopoulos mit Werkzeug" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section class="company-values section">
+  <div class="container">
+    <h2 class="section-title">Was uns antreibt.</h2>
+    <div class="company-values__grid">
+      @for (value of values; track value.title) {
+        <article class="card">
+          <h3>{{ value.title }}</h3>
+          <p>{{ value.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="company-timeline section">
+  <div class="container">
+    <h2 class="section-title">Unsere Geschichte.</h2>
+    <div class="company-timeline__list">
+      @for (entry of timeline; track entry.year) {
+        <article class="company-timeline__item card">
+          <span class="company-timeline__year">{{ entry.year }}</span>
+          <div>
+            <h3>{{ entry.title }}</h3>
+            <p>{{ entry.description }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="company-team section">
+  <div class="company-team__inner container card">
+    <div class="company-team__image">
+      <img src="/images/company-team.jpg" alt="Annamaria und Stefanos Papadopoulos" loading="lazy" />
+    </div>
+    <div class="company-team__content">
+      <h2 class="section-title">Stefanos &amp; Annamaria</h2>
+      <p>
+        Wir sind ein eingespieltes Duo: Stefanos auf der Baustelle, Annamaria im Buero. Zusammen
+        begleiten wir Ihr Projekt von der ersten Anfrage bis zur letzten Silikonfuge.
+      </p>
+      <ul>
+        <li>Persoenlicher Kontakt ohne wechselnde Ansprechpartner.</li>
+        <li>Flexible Terminabsprachen – wir richten uns nach Ihren Zeitfenstern.</li>
+        <li>Saubere Arbeit vor Ort, respektvoller Umgang mit Ihrem Zuhause.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="company-certifications section">
+  <div class="container">
+    <h2 class="section-title">Qualifikation &amp; Netzwerk.</h2>
+    <div class="company-certifications__grid">
+      @for (cert of certifications; track cert.title) {
+        <article class="card">
+          <h3>{{ cert.title }}</h3>
+          <p>{{ cert.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
