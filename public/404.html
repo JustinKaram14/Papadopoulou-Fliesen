@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weiterleitung …</title>
+    <script>
+      (function () {
+        var redirect = window.location.pathname + window.location.search + window.location.hash;
+        sessionStorage.setItem('papadopoulos-spa-redirect', redirect);
+        window.location.replace('/Papadopoulou-Fliesen/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

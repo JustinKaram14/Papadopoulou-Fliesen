@@ -9,7 +9,7 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Papadopoulos Fliesen | Fliesenleger im Grossraum Buehlertal'
+    title: 'Papadopoulos Fliesen | Fliesenleger im Großraum Bühlertal'
   },
   {
     path: 'leistungen',

@@ -2,12 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Papadopoulos Fliesen | Fliesenleger im Grossraum Buehlertal</title>
+  <title>Papadopoulos Fliesen | Fliesenleger im Großraum Bühlertal</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     name="description"
-    content="Papadopoulos Fliesen ist der familiengefuehrte Fliesenlegerbetrieb von Stefanos und Annamaria Papadopoulos im Grossraum Buehlertal, Rastatt und oberer Ortenau."
+    content="Papadopoulos Fliesen ist der familiengeführte Fliesenlegerbetrieb von Stefanos und Annamaria Papadopoulos im Großraum Bühlertal, Rastatt und oberer Ortenau."
   >
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Rounded&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+    (function () {
+      const redirect = sessionStorage.getItem('papadopoulos-spa-redirect');
+      if (redirect) {
+        sessionStorage.removeItem('papadopoulos-spa-redirect');
+        window.history.replaceState({}, '', redirect);
+      }
+    })();
+  </script>
   <app-root></app-root>
 </body>
 </html>

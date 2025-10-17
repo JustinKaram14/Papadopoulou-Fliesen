@@ -267,10 +267,6 @@
     grid-template-columns: 1fr;
   }
 
-  .home-hero__media {
-    order: -1;
-  }
-
   .home-hero__facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

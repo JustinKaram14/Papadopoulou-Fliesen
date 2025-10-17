@@ -34,21 +34,21 @@ interface ProjectPreview {
 export class HomeComponent {
   protected readonly serviceHighlights: ServiceHighlight[] = [
     {
-      title: 'Badgestaltung nach Mass',
+      title: 'Badgestaltung mit Herz',
       description:
-        'Handgefertigte Flaechen, fugenarme Loesungen und sorgfaeltig gesetzte Details fuer kleine und grosse Baeder.',
+        'Sorgfältig verlegte Fliesen, fugenarme Lösungen und liebevolle Details für Bäder jeder Größe.',
       icon: 'water_drop'
     },
     {
-      title: 'Naturstein & Grossformat',
+      title: 'Naturstein & Großformat',
       description:
-        'Beratung zur passenden Platte, millimetergenaue Verlegung sowie Pflegehinweise direkt vom Meister.',
+        'Gemeinsam finden wir die passende Platte – inklusive millimetergenauer Verlegung und Pflegetipps.',
       icon: 'layers'
     },
     {
-      title: 'Reparatur & Pflege vor Ort',
+      title: 'Reparatur & Pflege',
       description:
-        'Schnelle Hilfe bei Schaeden, Silikon- und Fugenservice sowie regelmaessige Pflegearbeiten im Grossraum Buehlertal.',
+        'Silikon- und Fugenservice, Reparaturen und laufende Pflegearbeiten im Großraum Bühlertal.',
       icon: 'build'
     }
   ];
@@ -57,30 +57,30 @@ export class HomeComponent {
     {
       title: 'Gespräch & Bestandsaufnahme',
       description:
-        'Stefanos kommt zu Ihnen, hoert zu und nimmt Masse direkt vor Ort im Raum Buehlertal, Rastatt und oberer Ortenau.'
+        'Stefanos schaut bei Ihnen vorbei, hört zu und nimmt Maße direkt vor Ort in Bühlertal, Rastatt und der oberen Ortenau.'
     },
     {
       title: 'Materialwahl & Angebot',
       description:
-        'Annamaria stimmt Materialien, Termine und Kosten mit Ihnen ab und kuemmert sich um alle Rueckfragen.'
+        'Annamaria stimmt Materialien, Termine und Kosten mit Ihnen ab und bleibt Ihre Ansprechpartnerin.'
     },
     {
-      title: 'Ausfuehrung & Pflegehinweise',
+      title: 'Ausführung & Pflegehinweise',
       description:
-        'Die Verlegung erfolgt persoenlich durch Stefanos, abschliessend erhalten Sie Tipps fuer die langfristige Pflege.'
+        'Stefanos führt die Arbeiten persönlich aus und gibt Ihnen Hinweise zur langfristigen Pflege.'
     }
   ];
 
   protected readonly testimonials: Testimonial[] = [
     {
       quote:
-        'Von der ersten Anfrage bis zur letzten Fuge lief alles direkt und verbindlich. Stefanos hat unser Gaestebad perfekt umgesetzt.',
+        'Von der ersten Anfrage bis zur letzten Fuge lief alles direkt und verbindlich. Stefanos hat unser Gästebad perfekt umgesetzt.',
       name: 'Familie Hauser',
-      role: 'Privatkunden aus Buehlertal'
+      role: 'Privatkunden aus Bühlertal'
     },
     {
       quote:
-        'Wir hatten Wasser unter alten Fliesen. Stefanos hat kurzfristig geholfen und Annamaria hat die komplette Abstimmung uebernommen.',
+        'Wir hatten Wasser unter alten Fliesen. Stefanos hat kurzfristig geholfen und Annamaria hat die komplette Abstimmung übernommen.',
       name: 'Claudia & Martin Schmitt',
       role: 'Hausbesitzer aus Rastatt'
     }
@@ -90,22 +90,22 @@ export class HomeComponent {
     {
       title: 'Wellnessbad in Naturstein',
       category: 'Bad',
-      image: '/images/gallery-spa.jpg'
+      image: 'images/gallery-spa.jpg'
     },
     {
       title: 'Helles Familienbad',
       category: 'Bad',
-      image: '/images/gallery-bath.jpg'
+      image: 'images/gallery-bath.jpg'
     },
     {
       title: 'Wohnbereich mit Keramik',
       category: 'Wohnraum',
-      image: '/images/gallery-living.jpg'
+      image: 'images/gallery-living.jpg'
     },
     {
       title: 'Terrasse mit Feinsteinzeug',
-      category: 'Aussenbereich',
-      image: '/images/gallery-terrace.jpg'
+      category: 'Außenbereich',
+      image: 'images/gallery-terrace.jpg'
     }
   ];
 }

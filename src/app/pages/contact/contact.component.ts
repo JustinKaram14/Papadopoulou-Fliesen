@@ -20,7 +20,7 @@ export class ContactComponent {
   protected readonly contactDetails: ContactDetail[] = [
     { label: 'Telefon', detail: '+49 711 899 877 00', url: 'tel:+4971189987700' },
     { label: 'E-Mail', detail: 'kontakt@papadopoulos-fliesen.de', url: 'mailto:kontakt@papadopoulos-fliesen.de' },
-    { label: 'Einsatzgebiet', detail: 'Buehlertal, Rastatt & oberer Ortenaukreis' }
+    { label: 'Einsatzgebiet', detail: 'Bühlertal, Rastatt & oberer Ortenaukreis' }
   ];
 
   submitContactForm(event: Event): void {

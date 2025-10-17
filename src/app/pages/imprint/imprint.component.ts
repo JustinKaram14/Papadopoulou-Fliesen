@@ -14,11 +14,11 @@ interface LegalDetail {
 export class ImprintComponent {
   protected readonly legalDetails: LegalDetail[] = [
     {
-      title: 'Angaben gemaess § 5 TMG',
+      title: 'Angaben gemäß § 5 TMG',
       lines: [
         'Papadopoulos Fliesen',
         'Inhaber: Stefanos Papadopoulos',
-        'Mobil im Grossraum Buehlertal · Rastatt · oberer Ortenaukreis'
+        'Mobil im Großraum Bühlertal · Rastatt · oberer Ortenaukreis'
       ]
     },
     {
@@ -29,7 +29,7 @@ export class ImprintComponent {
       ]
     },
     {
-      title: 'Verantwortlich fuer den Inhalt nach § 55 Abs. 2 RStV',
+      title: 'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV',
       lines: ['Annamaria Papadopoulos']
     },
     {

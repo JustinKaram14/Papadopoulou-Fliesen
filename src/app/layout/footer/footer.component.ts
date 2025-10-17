@@ -29,14 +29,14 @@ export class FooterComponent {
   ];
 
   protected readonly highlights: Highlight[] = [
-    { title: 'Badmodernisierung & Gaestetoiletten' },
-    { title: 'Natursteinarbeiten & Grossformat' },
+    { title: 'Badmodernisierung & Gästetoiletten' },
+    { title: 'Natursteinarbeiten & Großformat' },
     { title: 'Reparaturen und Fugenservice' },
     { title: 'Terrassen und Balkone' }
   ];
 
   protected readonly regions: string[] = [
-    'Buehlertal & Umgebung',
+    'Bühlertal & Umgebung',
     'Rastatt & Murgtal',
     'Oberer Ortenaukreis'
   ];
