@@ -32,7 +32,7 @@ export class CompanyComponent {
     {
       title: 'Persönliche Abstimmung',
       description:
-        'Annamaria ist Ihre Ansprechpartnerin für Angebote, Organisation und Buchhaltung. Kurze Wege statt Hotline.'
+        'Anna-Maria ist Ihre Ansprechpartnerin für Angebote, Organisation und Buchhaltung. Kurze Wege statt Hotline.'
     },
     {
       title: 'Verlässlichkeit vor Ort',
@@ -50,9 +50,9 @@ export class CompanyComponent {
     },
     {
       year: '2011',
-      title: 'Annamaria steigt ein',
+      title: 'Anna-Maria steigt ein',
       description:
-        'Tochter Annamaria übernimmt Organisation, Buchhaltung und Kommunikation – der Familienbetrieb entsteht.'
+        'Tochter Anna-Maria übernimmt Organisation, Buchhaltung und Kommunikation – der Familienbetrieb entsteht.'
     },
     {
       year: '2017',

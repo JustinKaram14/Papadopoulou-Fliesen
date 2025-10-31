@@ -30,7 +30,7 @@ export class ImprintComponent {
     },
     {
       title: 'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV',
-      lines: ['Annamaria Papadopoulos']
+      lines: ['Anna-Maria Papadopoulos']
     },
     {
       title: 'Berufsbezeichnung',

@@ -62,7 +62,7 @@ export class HomeComponent {
     {
       title: 'Materialwahl & Angebot',
       description:
-        'Annamaria stimmt Materialien, Termine und Kosten mit Ihnen ab und bleibt Ihre Ansprechpartnerin.'
+        'Anna-Maria stimmt Materialien, Termine und Kosten mit Ihnen ab und bleibt Ihre Ansprechpartnerin.'
     },
     {
       title: 'Ausführung & Pflegehinweise',
@@ -80,7 +80,7 @@ export class HomeComponent {
     },
     {
       quote:
-        'Wir hatten Wasser unter alten Fliesen. Stefanos hat kurzfristig geholfen und Annamaria hat die komplette Abstimmung übernommen.',
+        'Wir hatten Wasser unter alten Fliesen. Stefanos hat kurzfristig geholfen und Anna-Maria hat die komplette Abstimmung übernommen.',
       name: 'Claudia & Martin Schmitt',
       role: 'Hausbesitzer aus Rastatt'
     }

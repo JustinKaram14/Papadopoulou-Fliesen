@@ -85,7 +85,7 @@ export class ServicesComponent {
     {
       question: 'Wie läuft ein Projekt ab?',
       answer:
-        'Stefanos schaut sich Ihr Vorhaben persönlich an, Annamaria erstellt das Angebot und bleibt Ihre Ansprechpartnerin bis zum Abschluss der Arbeiten.'
+        'Stefanos schaut sich Ihr Vorhaben persönlich an, Anna-Maria erstellt das Angebot und bleibt Ihre Ansprechpartnerin bis zum Abschluss der Arbeiten.'
     },
     {
       question: 'Arbeiten Sie mit Partnerbetrieben?',
