@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Papadopoulos-Fliesen": {
+    "SP-Fliesen": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -48,7 +48,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/Papadopoulou-Fliesen/"
+              "baseHref": "/SP-Fliesen/"
             },
             "development": {
               "optimization": false,
@@ -62,10 +62,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Papadopoulos-Fliesen:build:production"
+              "buildTarget": "SP-Fliesen:build:production"
             },
             "development": {
-              "buildTarget": "Papadopoulos-Fliesen:build:development"
+              "buildTarget": "SP-Fliesen:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -100,3 +100,4 @@
     "analytics": false
   }
 }
+

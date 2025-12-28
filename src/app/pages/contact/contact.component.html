@@ -1,17 +1,15 @@
 <section class="contact-hero section">
   <div class="container">
     <span class="section-eyebrow">Kontakt</span>
-    <h1 class="section-title">Direkt zu Stefanos und Anna-Maria.</h1>
-.
- 
+    <h1 class="section-title">Direkt zu SP-Fliesen.</h1>
   </div>
 </section>
 
 <section class="contact-content section">
   <div class="contact-content__grid container">
     <div class="contact-content__info card">
-      <h2>Ihre Ansprechpartner</h2>
-      <p>Stefanos kümmert sich um das Handwerk, Anna-Maria um Ihre Nachrichten und Termine.</p>
+      <h2>Ihr Ansprechpartner</h2>
+      <p>Stefanos kümmert sich um das Handwerk und Ihre Nachrichten.</p>
       <ul class="contact-content__details">
         @for (detail of contactDetails; track detail.label) {
           <li>
@@ -33,42 +31,47 @@
     <div class="contact-content__form card">
       <h2>Kontaktformular</h2>
       <p>
-        Beschreiben Sie Ihr Vorhaben. Anna-Maria meldet sich spätestens am nächsten Werktag bei Ihnen
+        Beschreiben Sie Ihr Vorhaben. Stefanos meldet sich spätestens am nächsten Werktag bei Ihnen
         zurück.
       </p>
-      <form (submit)="submitContactForm($event)" novalidate>
+      <form #contactForm="ngForm" (ngSubmit)="submitContactForm(contactForm)" [hidden]="submitted()">
         <div class="contact-content__form-row">
           <label>
             Ihr Name*
-            <input type="text" name="name" placeholder="Vor- und Nachname" required />
+            <input type="text" name="name" placeholder="Vor- und Nachname" required [(ngModel)]="model.name" />
           </label>
           <label>
             E-Mail*
-            <input type="email" name="email" placeholder="name@email.de" required />
+            <input type="email" name="email" placeholder="name@email.de" required email [(ngModel)]="model.email" />
           </label>
         </div>
         <div class="contact-content__form-row">
           <label>
             Telefonnummer
-            <input type="tel" name="phone" placeholder="+49 ..." />
+            <input type="tel" name="phone" placeholder="+49 ..." [(ngModel)]="model.phone" />
           </label>
           <label>
             Einsatzort
-            <input type="text" name="location" placeholder="Ort / Stadtteil" />
+            <input type="text" name="location" placeholder="Ort / Stadtteil" [(ngModel)]="model.location" />
           </label>
         </div>
         <label>
           Nachricht*
-          <textarea name="message" rows="5" placeholder="Beschreiben Sie Ihr Projekt" required></textarea>
+          <textarea name="message" rows="5" placeholder="Beschreiben Sie Ihr Projekt" required [(ngModel)]="model.message"></textarea>
         </label>
         <div class="contact-content__privacy">
-          <input type="checkbox" id="privacy" required />
+          <input type="checkbox" id="privacy" name="privacy" required [(ngModel)]="model.privacy" />
           <label for="privacy">
             Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden. Hinweise zum
             Widerruf finden Sie im <a routerLink="/impressum">Impressum</a>.
           </label>
         </div>
-        <button type="submit" class="btn">Anfrage senden</button>
+        @if (error()) {
+          <div class="contact-content__error">
+            {{ error() }}
+          </div>
+        }
+        <button type="submit" class="btn" [disabled]="contactForm.invalid">Anfrage senden</button>
       </form>
 
       @if (submitted()) {
@@ -76,7 +79,7 @@
           <strong>Vielen Dank für Ihre Nachricht!</strong>
           <p>
             Wir melden uns zeitnah bei Ihnen. Für dringende Anliegen erreichen Sie uns telefonisch unter
-            <a href="tel:+4971189987700">+49 711 899 877 00</a>.
+            <a href="tel:+491764583859">+49 1764583859</a>.
           </p>
         </div>
       }

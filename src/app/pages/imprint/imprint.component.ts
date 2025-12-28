@@ -16,9 +16,9 @@ export class ImprintComponent {
     {
       title: 'Angaben gemäß § 5 TMG',
       lines: [
-        'Papadopoulos Fliesen',
+        'SP-Fliesen',
         'Inhaber: Stefanos Papadopoulos',
-        'Mobil im Großraum Bühlertal · Rastatt · oberer Ortenaukreis'
+        'Mobil im Großraum Bühlertal – Rastatt – oberer Ortenaukreis'
       ]
     },
     {
@@ -30,7 +30,7 @@ export class ImprintComponent {
     },
     {
       title: 'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV',
-      lines: ['Anna-Maria Papadopoulos']
+      lines: ['Stefanos Papadopoulos']
     },
     {
       title: 'Berufsbezeichnung',

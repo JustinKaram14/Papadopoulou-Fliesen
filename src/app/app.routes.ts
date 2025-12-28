@@ -9,27 +9,27 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Papadopoulos Fliesen | Fliesenleger im Großraum Bühlertal'
+    title: 'SP-Fliesen | Fliesenleger im Großraum Bühlertal'
   },
   {
     path: 'leistungen',
     component: ServicesComponent,
-    title: 'Leistungen | Papadopoulos Fliesen'
+    title: 'Leistungen | SP-Fliesen'
   },
   {
     path: 'unternehmen',
     component: CompanyComponent,
-    title: 'Unternehmen | Papadopoulos Fliesen'
+    title: 'Unternehmen | SP-Fliesen'
   },
   {
     path: 'kontakt',
     component: ContactComponent,
-    title: 'Kontakt | Papadopoulos Fliesen'
+    title: 'Kontakt | SP-Fliesen'
   },
   {
     path: 'impressum',
     component: ImprintComponent,
-    title: 'Impressum | Papadopoulos Fliesen'
+    title: 'Impressum | SP-Fliesen'
   },
   {
     path: '**',

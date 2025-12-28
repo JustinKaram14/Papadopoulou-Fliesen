@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface ServicePackage {
@@ -30,72 +30,73 @@ export class ServicesComponent {
     {
       title: 'Badgestaltung & Sanierung',
       description:
-        'Sorgfältige Erneuerung von Bädern, Gästetoiletten und Spa-Bereichen inklusive Abdichtung, Fliesenkonzept und Silikonarbeiten.',
+        'SorgfÃ¤ltige Erneuerung von BÃ¤dern, GÃ¤stetoiletten und Spa-Bereichen inklusive Abdichtung, Fliesenkonzept und Silikonarbeiten.',
       features: [
         'Individuelle Bestandsaufnahme vor Ort',
         'Untergrundvorbereitung und Abdichtung',
-        'Fugenarme Duschen und Nischenlösungen'
+        'Fugenarme Duschen und NischenlÃ¶sungen'
       ],
-      image: 'images/service-bathroom.jpg'
+      image: 'images/service-bathroom.svg'
     },
     {
-      title: 'Wohnräume & Treppen',
+      title: 'WohnrÃ¤ume & Treppen',
       description:
-        'Großformatige Keramik, Naturstein und robuste Beläge für Küchen, Flure und Wohnbereiche mit harmonischem Fugenbild.',
+        'GroÃŸformatige Keramik, Naturstein und robuste BelÃ¤ge fÃ¼r KÃ¼chen, Flure und Wohnbereiche mit harmonischem Fugenbild.',
       features: [
-        'Großformatplatten bis 120 cm Breite',
-        'Saubere Anschlüsse an den Bestand',
+        'GroÃŸformatplatten bis 120 cm Breite',
+        'Saubere AnschlÃ¼sse an den Bestand',
         'Pflege- und Reinigungsberatung'
       ],
-      image: 'images/service-living.jpg'
+      image: 'images/service-living.svg'
     },
     {
-      title: 'Außenbereiche & Reparaturen',
+      title: 'AuÃŸenbereiche & Reparaturen',
       description:
-        'Feinsteinzeug und Naturstein für Terrassen, Balkone und Eingangsbereiche sowie Instandsetzung von Schäden und Fugen.',
+        'Feinsteinzeug und Naturstein fÃ¼r Terrassen, Balkone und Eingangsbereiche sowie Instandsetzung von SchÃ¤den und Fugen.',
       features: [
         'Frostsichere Verlegung im System',
         'Silikon- und Fugenservice',
         'Schnelle Hilfe bei lockeren Fliesen'
       ],
-      image: 'images/service-outdoor.jpg'
+      image: 'images/service-outdoor.svg'
     }
   ];
 
   protected readonly tileTypes: TileType[] = [
     {
       name: 'Naturstein',
-      description: 'Warme Oberflächen für Bäder und Wohnräume, individuell zugeschnitten von Stefanos.'
+      description: 'Warme OberflÃ¤chen fÃ¼r BÃ¤der und WohnrÃ¤ume, individuell zugeschnitten von Stefanos.'
     },
     {
       name: 'Feinsteinzeug',
-      description: 'Pflegeleicht und robust, von Holzoptik bis Betonlook – ideal für Innen- und Außenflächen.'
+      description: 'Pflegeleicht und robust, von Holzoptik bis Betonlook â€“ ideal fÃ¼r Innen- und AuÃŸenflÃ¤chen.'
     },
     {
       name: 'Mosaik',
-      description: 'Akzente in Duschen, Nischen oder als Bordüre, präzise verlegt mit ruhigem Fugenbild.'
+      description: 'Akzente in Duschen, Nischen oder als BordÃ¼re, prÃ¤zise verlegt mit ruhigem Fugenbild.'
     },
     {
       name: 'Treppen & Sockel',
-      description: 'Genau angepasste Stufenkanten, Setzstufen und Abschlüsse für ein stimmiges Gesamtbild.'
+      description: 'Genau angepasste Stufenkanten, Setzstufen und AbschlÃ¼sse fÃ¼r ein stimmiges Gesamtbild.'
     }
   ];
 
   protected readonly faqs: Faq[] = [
     {
-      question: 'Wie läuft ein Projekt ab?',
+      question: 'Wie lÃ¤uft ein Projekt ab?',
       answer:
-        'Stefanos schaut sich Ihr Vorhaben persönlich an, Anna-Maria erstellt das Angebot und bleibt Ihre Ansprechpartnerin bis zum Abschluss der Arbeiten.'
+        'Stefanos schaut sich Ihr Vorhaben persÃ¶nlich an, erstellt das Angebot und bleibt Ihr Ansprechpartner bis zum Abschluss der Arbeiten.'
     },
     {
       question: 'Arbeiten Sie mit Partnerbetrieben?',
       answer:
-        'Wir konzentrieren uns auf das Fliesenhandwerk. Für Gewerke wie Sanitär oder Elektrik empfehlen wir gerne regionale Betriebe aus unserem Netzwerk.'
+        'Wir konzentrieren uns auf das Fliesenhandwerk. FÃ¼r Gewerke wie SanitÃ¤r oder Elektrik empfehlen wir gerne regionale Betriebe aus unserem Netzwerk.'
     },
     {
       question: 'In welchem Gebiet sind Sie unterwegs?',
       answer:
-        'Wir sind mobil im Großraum Bühlertal, Rastatt und im oberen Ortenaukreis unterwegs und kommen bei Bedarf auch in angrenzende Orte.'
+        'Wir sind mobil im GroÃŸraum BÃ¼hlertal, Rastatt und im oberen Ortenaukreis unterwegs und kommen bei Bedarf auch in angrenzende Orte.'
     }
   ];
 }
+

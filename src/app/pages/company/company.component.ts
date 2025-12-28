@@ -31,8 +31,7 @@ export class CompanyComponent {
     },
     {
       title: 'Persönliche Abstimmung',
-      description:
-        'Anna-Maria ist Ihre Ansprechpartnerin für Angebote, Organisation und Buchhaltung. Kurze Wege statt Hotline.'
+      description: 'Direkte Absprachen mit Stefanos – keine Hotline, keine wechselnden Teams.'
     },
     {
       title: 'Verlässlichkeit vor Ort',
@@ -50,9 +49,9 @@ export class CompanyComponent {
     },
     {
       year: '2011',
-      title: 'Anna-Maria steigt ein',
+      title: 'Eigene Marke SP-Fliesen',
       description:
-        'Tochter Anna-Maria übernimmt Organisation, Buchhaltung und Kommunikation – der Familienbetrieb entsteht.'
+        'Der Meisterbetrieb firmiert unter SP-Fliesen. Der Fokus liegt auf direkter Betreuung ohne Zwischenstationen.'
     },
     {
       year: '2017',

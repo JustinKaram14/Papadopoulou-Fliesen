@@ -1,4 +1,4 @@
-<header class="header" [class.header--open]="menuOpen()">
+﻿<header class="header" [class.header--open]="menuOpen()">
   <div class="header__container container">
     <a
       class="header__brand"
@@ -6,10 +6,10 @@
       aria-label="Zur Startseite"
       (click)="closeMenu()"
     >
-      <img class="header__logo" src="logo.png" alt="Papadopoulos Fliesen Logo" />
+      <img class="header__logo" src="logo.svg" alt="SP-Fliesen Logo" />
       <span class="header__brand-text">
-        <span class="header__brand-name">Papadopoulos Fliesen</span>
-        <span class="header__brand-tagline">Stefanos &amp; Anna-Maria aus Bühlertal</span>
+        <span class="header__brand-name">SP-Fliesen</span>
+        <span class="header__brand-tagline">Stefanos Papadopoulos</span>
       </span>
     </a>
 
@@ -77,8 +77,8 @@
     </nav>
 
     <div class="header__actions">
-      <a class="header__phone" href="tel:+4971189987700">
-        <span>Direkt: +49 711 899 877 00</span>
+      <a class="header__phone" href="tel:+491764583859">
+        <span>Direkt: +49 1764583859</span>
       </a>
       <a routerLink="/kontakt" class="btn btn--ghost">Kontakt aufnehmen</a>
     </div>
@@ -92,3 +92,4 @@
     (click)="closeMenu()"
   ></button>
 </header>
+
